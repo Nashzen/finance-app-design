@@ -6,10 +6,10 @@ import 'package:get/get.dart';
 
 void main() {
   runApp(GetMaterialApp(
-    theme: ThemeData.light().copyWith(primaryColor: greyTheme),
+    theme: ThemeData.light().copyWith(primaryColor: background),
     debugShowCheckedModeBanner: false,
     defaultTransition: Transition.native,
     getPages: AppPages.pages,
-    initialRoute: AppRoutes.DASHBOARD,
+    initialRoute: AppRoutes.MENU,
   ));
 }
