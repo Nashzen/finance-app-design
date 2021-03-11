@@ -1,9 +1,9 @@
 import 'package:financial_design/app/components/shareds/custom_text.dart';
 import 'package:financial_design/app/utils/custom_colors.dart';
+import 'package:financial_design/modules/currencies/currencies_page.dart';
 import 'package:financial_design/modules/dashboard/dashboard.dart';
 import 'package:financial_design/modules/deposits/deposits_page.dart';
 import 'package:financial_design/modules/menu/menu_controller.dart';
-import 'package:financial_design/modules/prices/prices_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -15,7 +15,7 @@ class MenuPage extends StatelessWidget {
   final List<Widget> pages = [
     Dashboard(),
     DepositsPage(),
-    PricesPage(),
+    CurrenciesPage(),
   ];
 
   @override
