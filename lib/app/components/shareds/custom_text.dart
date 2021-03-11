@@ -9,16 +9,19 @@ class CustomText extends StatelessWidget {
   final Color textColor;
   final FontStyle fontStyle;
   final FontWeight fontWeight;
+  final TextOverflow textOverflow;
 
-  CustomText(
-      {this.text,
-      this.fontSize,
-      this.fontStyle,
-      this.fontWeight,
-      this.maxLines,
-      this.textAlign,
-      this.textColor,
-      this.textDirection});
+  CustomText({
+    this.text,
+    this.fontSize,
+    this.fontStyle,
+    this.fontWeight,
+    this.maxLines,
+    this.textAlign,
+    this.textColor,
+    this.textDirection,
+    this.textOverflow,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -26,14 +29,15 @@ class CustomText extends StatelessWidget {
       text,
       textDirection: textDirection,
       textAlign: textAlign,
-      overflow: TextOverflow.ellipsis,
+      overflow: textOverflow == null ? TextOverflow.ellipsis : textOverflow,
       maxLines: maxLines,
+      softWrap: false,
       style: TextStyle(
-        color: textColor,
+        color: textColor == null ? Colors.white : textColor,
         fontFamily: 'Quicksand',
         fontSize: fontSize,
         fontStyle: fontStyle,
-        fontWeight: fontWeight,
+        fontWeight: fontWeight == null ? FontWeight.w400 : fontWeight,
       ),
     );
   }

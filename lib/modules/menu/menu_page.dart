@@ -21,6 +21,7 @@ class MenuPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: background,
         appBar: AppBar(
           elevation: 0,
           title: CustomText(
@@ -36,8 +37,12 @@ class MenuPage extends StatelessWidget {
             )
           ],
         ),
-        body: Obx(
-          () => pages.elementAt(menuController.selectedIndex.value),
+        body: Padding(
+          padding:
+              const EdgeInsets.only(left: 15, right: 15, top: 40, bottom: 15),
+          child: Obx(
+            () => pages.elementAt(menuController.selectedIndex.value),
+          ),
         ),
         bottomNavigationBar: Obx(
           () => Theme(

@@ -9,3 +9,6 @@ const navy = Color(0xFF22252C);
 const background = Color(0xff181623);
 const lightGrey = Color(0xff222131);
 const lightPurple = Color(0xff6C56F9);
+const lightGreen = Color(0xff60D46F);
+const purpleTextColors = Color(0xFF6F739B);
+const inactiveGraph = Color(0xFF302E45);

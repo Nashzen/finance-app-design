@@ -12,6 +12,8 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   get: ^3.26.0
+  pie_chart: ^4.0.1
+  dio: ^3.0.10
 
 dev_dependencies:
   flutter_test:
