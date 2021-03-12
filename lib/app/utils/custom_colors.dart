@@ -12,3 +12,4 @@ const lightPurple = Color(0xff6C56F9);
 const lightGreen = Color(0xff60D46F);
 const purpleTextColors = Color(0xFF6F739B);
 const inactiveGraph = Color(0xFF302E45);
+const marvelRed = Color(0xFFED1D24);
