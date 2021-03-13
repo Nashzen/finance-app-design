@@ -51,7 +51,8 @@ class GraphContainer extends StatelessWidget {
               const EdgeInsets.only(top: 10, bottom: 5, left: 10, right: 10),
           child: Column(
             children: [
-              Container(
+              Flexible(
+                flex: 1,
                 child: _chart,
               ),
               SizedBox(height: 10),

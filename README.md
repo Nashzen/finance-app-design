@@ -1,16 +1,22 @@
 # financial_design
 
-A new Flutter project.
+Design de aplicativo de finanças, utilizando a [API HG finance](https://hgbrasil.com/status/finance).
+Layout baseado [Neste protótipo](https://dribbble.com/shots/14554461-Fintech-wallet/attachments/6243286?mode=media)
 
-## Getting Started
+## A implementar
 
-This project is a starting point for a Flutter application.
+- [X] Layout das páginas
+- [X] API de cotação financeira para a página de cotações
+- [] Autenticação e login com firebase
+- [] Depósitos fakes entre contas autenticadas
 
-A few resources to get you started if this is your first Flutter project:
+## Funções
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Primeiramente, até agora a Dashboard está pronta apenas visualmente, não há nenhum tipo de integração.
+![](/screenshots/dash.jpg)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+A página de cotações está integrada com a API HG Finance, todas as requisições foram feitas utilizando o [Pacote Dio](https://pub.dev/packages/dio).
+![](/screenshots/cotacao.jpg)
+
+
+
